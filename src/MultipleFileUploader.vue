@@ -228,7 +228,7 @@ export default {
                         Bus.$emit('upload-success');
                         // Show success message
                         if(this.showHttpMessages)
-                          this.successMsg = response + this.successMessagePath;
+                          this.successMsg = response.data + this.successMessagePath;
                         this.removeItems();
                     })
                     .catch((error) => {
